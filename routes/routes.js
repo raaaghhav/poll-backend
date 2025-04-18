@@ -5,5 +5,6 @@ const controller = require("./../controller/poll.controller");
 router.post("/create", controller.createPoll);
 router.post("/:id/respond", controller.submitResponse);
 router.get("/:id", controller.getPoll);
+router.get("/poll/list", controller.getAllPolls);
 
 module.exports = router;
